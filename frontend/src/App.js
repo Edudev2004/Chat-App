@@ -3,7 +3,7 @@ import io from 'socket.io-client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-const socket = io('https://b666b05caa8a.ngrok-free.app');
+const socket = io('process.env.REACT_APP_BACKEND_URL');
 
 function App() {
   const [user, setUser] = useState('');
